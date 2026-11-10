@@ -1,0 +1,33 @@
+# Secretos: el .Renviron local contiene la clave del LLM. La
+# configuración se pasa en tiempo de ejecución con --env-file, nunca se hornea
+# en la imagen.
+.Renviron
+.env
+
+# Control de versiones y configuración local de herramientas
+.git
+.gitignore
+.claude
+.vscode
+.Rproj.user
+.Rhistory
+.RData
+
+# La librería de rv se reconstruye dentro de la imagen con `rv sync`, a partir
+# de rv.lock. Copiarla desde el host mezclaría binarios de otra máquina.
+rv/library
+
+# Artefactos que produce el propio generador
+tests
+run_tests.R
+resultados_pruebas
+*.parquet
+*.csv
+
+# Base de datos de ejemplo: el generador no la abre, solo usa su nombre
+*.db
+
+# Documentación renderizada
+README_files
+*.html
+img

@@ -1,0 +1,6 @@
+La base de datos es de tipo PostgreSQL y se llama '{{base_de_datos}}'.
+Tienes un archivo `helpers.R` disponible que define funciones como:
+- `conectar_db()`: Establece y devuelve una conexión DBI a la base de datos (Host: `{{host}}`, Port: `{{puerto}}`, User: `{{usuario}}`, DBNAME: `{{base_de_datos}}`, Password desde variable de entorno `{{var_entorno_contrasena}}`).
+- `obtener_esquema_tabla(con, tabla)`: Obtiene el esquema de una tabla como un data.frame. Devuelve `column_name` como `name`, `data_type` como `type` (e.g., 'integer', 'character varying', 'numeric'), `is_nullable` como `notnull` (TRUE/FALSE) y `column_default` como `dflt_value`.
+Considera las convenciones de tipos de datos de PostgreSQL para la validación de esquema y tipos.
+**IMPORTANTE: Los nombres de tablas en la base de datos (PostgreSQL) están en minúsculas** (ej. `dbReadTable(con, 'autores')` en lugar de `'Autores'`). Sin embargo, los nombres de columnas deben respetar exactamente la capitalización indicada en el contrato de datos.
