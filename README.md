@@ -191,10 +191,6 @@ Las pruebas se ejecutan utilizando el paquete `testthat` y exportan un informe d
 
 ---
 
-## Soporte
-Si tiene alguna pregunta sobre este proyecto, por favor busque el contacto interno de su organización o [genere un tiquete](/issues/new) en este repositorio.
-
-
 ## Licencia
 
 Este proyecto se distribuye bajo la licencia MIT. Ver [LICENSE](LICENSE).
