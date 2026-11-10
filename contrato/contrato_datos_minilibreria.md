@@ -4,7 +4,7 @@
 
 | Nombre del proyecto | Validación de contratos de datos |
 | ----: | :---- |
-| **Repositorio** | datachat |
+| **Repositorio** | pactr |
 | **Preparado por:** | Magdiel |
 | **Versión:** | v0.01 |
 | **Fecha:**  | 27 de noviembre del 2025 |
