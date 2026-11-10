@@ -1,4 +1,4 @@
-# validacion-entrada
+# PactR
 
 Este proyecto es un template o plantilla que debe adaptarse a las condiciones especificas de los datos de entrada de la solución. `validacion-entrada` tiene como objetivo la generación de pruebas automáticas sobre los datos de entrada para una solución de datos desplegadas. Utiliza un modelo de lenguaje, a través de un gateway compatible con la API de OpenAI, para leer un contrato de datos en formato Markdown, generar pruebas unitarias basadas en `testthat`, y luego ejecutarlas de forma reproducible contra la base de datos activa.
 
